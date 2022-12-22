@@ -108,8 +108,10 @@
 				<div class="col-md-10 col-md-offset-1 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<!--
 							<h1 id="home_title">Memory lost!!</h1>
 							<h2>Si raga siamo proprio noi, <a href="http://freehtml5.co/" target="_blank">play with us</a></h2>
+							-->
 							<div class="row">
 								<form class="form-inline" id="fh5co-header-subscribe">
 									<!--
@@ -120,11 +122,31 @@
 										</div>
 									</div>
 									-->
+									<!--
 									<audio controls>
 										<source src="myclip.mp3" type="audio/mpeg"> 
 										 Your browser does not support the audio element.
 										 </source>
 									   </audio>
+									   -->
+
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "slimad",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+
 									   
 								</form>
 							</div>
@@ -367,8 +389,8 @@
 				</div>
 				<div class="col-md-4 col-sm-12 col-xs-12 fh5co-widget col-md-push-1">
 					<h3>A Little About Brigna</h3>
-					<p>Presto canzoni dedicate a tutte le ragazze che vi volete scopare. E poi conquisteremo l'Almeria.</p>
-					<p><a href="#">Scopri di più</a></p>
+					<p>Estatè pesca o limone</p>
+					<p><a href="#">Avete bisogno di soldi?</a></p>
 				</div>
 			</div>
 
