@@ -56,9 +56,39 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<script src="sweetalert2.all.min.js"></script>
+
+<script>
+	function bisognoDiSoldi() {
+		Swal.fire({
+		title: 'Anche noi',
+		text: 'e mo',
+		confirmButtonText: 'boh',
+		imageUrl: "images/fishingmoney.gif",
+		width: 600,
+		padding: '3em',
+		color: 'white', //'#716add',
+		background: '#fff url("images/work-1.jpg")',
+		backdrop: `
+			rgba(0,0,123,0.4)
+			url("images/fishingmoney.gif")
+			center
+			no-repeat
+		`
+		})	
+	}
+	/*
+	$( "#try" ).click(function() {
+  		Swal.fire("yoo");
+	}); */
+</script>
+
 	</head>
 	<body>
-		
+
+	
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -390,7 +420,7 @@
 				<div class="col-md-4 col-sm-12 col-xs-12 fh5co-widget col-md-push-1">
 					<h3>A Little About Brigna</h3>
 					<p>Estatè pesca o limone</p>
-					<p><a href="#">Avete bisogno di soldi?</a></p>
+					<p ><a onclick="bisognoDiSoldi();" href="#">Hai bisogno di soldi?</a></p>
 				</div>
 			</div>
 
